@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+  background-image: url(https://marketplace.canva.com/EAD2962NKnQ/2/0/1600w/canva-rainbow-gradient-pink-and-purple-zoom-virtual-background-_Tcjok-d9b4.jpg)
+    }
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	padding: 1em;
+	display: flex;
+	flex-flow: row nowrap;
+  background-color: #B2BBC2;
+  border-radius: 1rem;
+  }
+p, [for="abtype"], [for="comments"] {
+	margin: 2rem 0 0 0;
+}
+section {
+	flex-basis: 57%;
+	margin-right: 5%;
+  border: solid 0px black;
+}
+aside {
+	flex-basis: 23%;
+  border: solid 0px darkgreen;
+}
+fieldset {
+  border: 1px solid black;
+  border-radius: 0.7rem;
+  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  }
+legend {
+  border: 0px solid black;
+  border-radius: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+ }
+label {
+  display: block;
+  }
+textarea {
+  height: 10rem;
+  padding: 1rem;
+}
+select {
+  font-size: 1rem;
+}
+button {
+  font-size: 1rem;
+  margin: 2rem 0;
+  color: darkgreen;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.3rem 1rem;
+  }
+
+button:hover {
+  background-color: lightgrey;
+  color: black;
+}
+input:not([type="radio"]):not([type="checkbox"]), textarea, select {
+  display: block; /*używane zeby mozna bylo zmienic width itd. W przeciwnymrazie to jest inline element*/
+  margin-bottom: 2rem;
+  width: 30rem;
+  font-family: Arial Helvetica;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  border: none;
+}
